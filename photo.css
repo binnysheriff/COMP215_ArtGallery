@@ -1,0 +1,272 @@
+header h1 {
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+}
+
+
+   #bottom-footer {
+       width: 100%;
+       padding: 10px;
+       /*background-image: linear-gradient( 45deg, #fe33ff, #33fdff);*/
+       background-color: white;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       text-align: center;
+       position: fixed;
+       bottom: 0;
+       /* Height of the footer */
+       height: 20px;
+   }
+
+.canvas {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 350px;
+    bottom: 60px;
+    width: 800px;
+    height: 425px;
+    overflow: auto;
+    background-color: rgb(0, 0, 0 );
+    background-color: rgba(0, 0, 0 );
+}
+
+/* canvas box*/
+.canvas-content {
+    background-color: ghostwhite;
+    margin: 5% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 70%;
+}
+
+/* exit button  */
+.exit {
+    color: aqua;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+.exit:hover,
+.exit:focus {
+    color: deeppink;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+img {
+    cursor: pointer;
+
+}
+
+
+
+.canvas-body img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.delete {
+    display: none;
+}
+
+
+
+#favorites {
+    margin-bottom: 150px;
+}
+
+
+
+#favorites tr td img,
+#favorites tr td button {
+    float: bottom
+
+}
+
+body {
+    line-height: 1;
+    width: 100%;
+    margin: 0 auto;
+    font-family: verdana, arial, helvetica, sans-serif;
+    background-image: url("backgd4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* page header */
+
+header h1 {
+    text-align: center;
+    padding: 0.5em;
+    /*background-image: linear-gradient( 45deg, #fe33ff, #33fdff);*/
+    /*color: white;*/
+}
+
+/* main content */
+article {
+    background: white;
+    position: relative;
+}
+
+article h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 0 10px 51px;
+}
+
+#leftarrow:hover{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+#rightarrow:hover{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+#leftarrow, #rightarrow {
+    /*background: #696565;*/
+    background-image: linear-gradient( 45deg, #fe33ff, #33fdff);
+    opacity: 0.8;
+    color: white;
+    position: absolute;
+    z-index: 30;
+    text-align: center;
+    height: 135px;
+    width: 40px;
+    top: 67px;
+}
+
+article div:hover {
+    cursor: default;
+}
+
+#leftarrow {
+    left: 0;
+}
+
+#rightarrow {
+    right: 0;
+}
+
+#fiveButton {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 290px;
+    color: white;
+    text-align: center;
+}
+
+#fiveButton p {
+    width: 20%;
+    margin: 0 auto;
+    line-height: 2em;
+    background-image: linear-gradient( 45deg, #fe33ff, #e83845);
+    opacity: 0.8;
+
+
+
+}
+#fiveButton:hover {
+    text-decoration: none;
+    color: #FFCE30;
+    cursor: pointer;
+}
+
+#leftarrow p, #rightarrow p {
+    position: relative;
+    top: 50%;
+    margin-top: -0.5em;
+}
+
+figure {
+    position: absolute;
+    -webkit-box-shadow: 10px 0 5px rgb(192, 192, 192, 0.5),
+                        -10px 0 5px rgb(192, 192, 192, 0.5);
+    -moz-box-shadow:    10px 0 5px rgb(192, 192, 192, 0.5),
+                        -10px 0 5px rgb(192, 192, 192, 0.5);
+    box-shadow:         10px 0 5px rgb(192, 192, 192, 0.4),
+                        -10px 0 5px rgb(192, 192, 192, 0.5);
+}
+
+#fig2 {
+    z-index: 10;
+    left: 13%;
+    top: 34px;
+}
+
+#fig3 {
+    z-index: 20;
+    left: 50%;
+    margin-left: -240px;
+    top: 0;
+}
+
+#fig4 {
+    z-index: 10;
+    right: 13%;
+    top: 34px;
+}
+
+#fig5{
+    z-index: 10;
+    position: absolute;
+    right:45px;
+    top: 67px;
+}
+
+#favorites {
+    float: left;
+    position: fixed;
+    bottom: 20px;
+    width: 100px;
+}

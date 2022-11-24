@@ -1,0 +1,75 @@
+<!-----Created by Binet Sheriff 301253726 SEC.004 COMP125----->
+<html lang="en">
+<head>
+<meta charset="utf-8" >
+<title>ART GALLERY</title>
+<link rel="stylesheet" href="photo.css" >
+</head>
+<body>
+<div>
+  <header>
+    <h1 class="rainbow-text"> ART GALLERY &trade; </h1>
+  </header>
+  <article>
+    <div id="leftarrow">
+      <p>&lt &hearts; </p>
+    </div>
+    <figure id="fig2">
+      <img src="images/IMG_01sm.jpg" onclick="openImg(event)" width="350" height="202" alt="walk down memory lane">
+    </figure>
+    <figure id="fig3">
+      <img src="images/IMG_02sm.jpg" onclick="openImg(event)" width="480" height="264" alt="lost soul">
+    </figure>
+    <figure id="fig4">
+      <img src="images/IMG_03sm.jpg" onclick="openImg(event)" width="350" height="202" alt="look close">
+    </figure>
+    <div id="fiveButton">
+      <p><b>Display images</b></p>
+    </div>
+    <figure id="fig5"> </figure>
+    <div id="rightarrow">
+      <p> &hearts; &gt</p>
+    </div>
+  </article>
+</div>
+
+<!--Favourites Table css can be found in bottom of css page-->
+<div>
+<table id="favorites"></table>
+</div>
+
+  <!-- The canvas -->
+
+  <div id="myCanvas" class="canvas">
+
+    <!-- Canvas box -->
+
+    <div class="canvas-content">
+
+      <div class="canvas-header">
+
+        <!--Exit canvas by clicking on this-->
+
+        <span class="exit" onclick="hidePopupImg()">&times;</span>
+
+      </div>
+
+        <div class="canvas-body">
+
+
+        <!--button to add image in favorite area-->
+
+        <button onclick="addToFavorites();">Add To Favorites</button>
+
+        <!--display image here-->
+          <p style= "color:darkblue; text-align: center;" >Open your Horizon</p>
+        <img id="zoom" alt="zoom to bigger image" src="">
+
+        </div>
+    </div>
+  </div>
+<footer id="bottom-footer"> <b>Copyright &copy; Binet Sheriff 301253726 COMP125 SEC.004 </b> </footer>
+<script src="photo.js"></script>
+</body>
+</html>
+
